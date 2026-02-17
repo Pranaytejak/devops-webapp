@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS DevOps CI/CD Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #232526, #414345);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #e68900;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 14px;
+            background: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 AWS DevOps Automation</h1>
+    <p>CI/CD Pipeline Successfully Configured</p>
+</header>
+
+<div class="card">
+    <h2>Deployment Status</h2>
+    <p id="status">Checking...</p>
+    <button onclick="checkStatus()">Check Status</button>
+</div>
+
+<footer>
+    <p>Deployed using AWS CodePipeline, CodeBuild & S3</p>
+</footer>
+
+<script>
+    function checkStatus() {
+        document.getElementById("status").innerHTML = 
+        "✅ Build Successful & Deployed Automatically!";
+    }
+</script>
+
+</body>
+</html>
